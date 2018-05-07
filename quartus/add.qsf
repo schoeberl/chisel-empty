@@ -1,0 +1,21 @@
+set_global_assignment -name FAMILY "Cyclone IV E"
+set_global_assignment -name DEVICE EP4CE115F29C7
+
+set_global_assignment -name TOP_LEVEL_ENTITY Add
+set_global_assignment -name VERILOG_FILE ../generated/Add.v
+set_global_assignment -name VERILOG_MACRO "SYNTHESIS=<None>"
+
+set_global_assignment -name PARTITION_NETLIST_TYPE SOURCE -section_id Top
+set_global_assignment -name PARTITION_FITTER_PRESERVATION_LEVEL PLACEMENT_AND_ROUTING -section_id Top
+set_global_assignment -name PARTITION_COLOR 16764057 -section_id Top
+set_global_assignment -name USE_CONFIGURATION_DEVICE OFF
+set_global_assignment -name STRATIX_DEVICE_IO_STANDARD "3.3-V LVCMOS"
+
+
+set_location_assignment PIN_Y2 -to clk
+
+set_global_assignment -name LAST_QUARTUS_VERSION "16.1.0 Lite Edition"
+set_global_assignment -name RESERVE_ALL_UNUSED_PINS "AS INPUT TRI-STATED WITH WEAK PULL-UP"
+
+
+set_instance_assignment -name PARTITION_HIERARCHY root_partition -to | -section_id Top
