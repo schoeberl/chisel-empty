@@ -4,7 +4,7 @@ SBT = sbt
 doit:
 	$(SBT) "runMain empty.AddMain"
 
-# Generate the C++ simulation and run the tests
+# Run the test
 test:
 	$(SBT) "test:runMain empty.AddTester"
 

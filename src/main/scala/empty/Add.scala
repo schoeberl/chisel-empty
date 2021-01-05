@@ -25,5 +25,5 @@ class Add extends Module {
 
 object AddMain extends App {
   println("Generating the adder hardware")
-  chisel3.Driver.execute(Array("--target-dir", "generated"), () => new Add())
+  (new chisel3.stage.ChiselStage).emitVerilog(new Add(), Array("--target-dir", "generated"))
 }
