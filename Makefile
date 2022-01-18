@@ -2,11 +2,11 @@ SBT = sbt
 
 # Generate Verilog code
 doit:
-	$(SBT) "runMain empty.AddMain"
+	sbt run
 
 # Run the test
 test:
-	$(SBT) "test:runMain empty.AddTester"
+	sbt test
 
 clean:
 	git clean -fd
