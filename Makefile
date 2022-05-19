@@ -1,5 +1,3 @@
-SBT = sbt
-
 # Generate Verilog code
 doit:
 	sbt run
