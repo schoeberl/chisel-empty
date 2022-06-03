@@ -23,3 +23,5 @@ jobs:
         distribution: 'temurin'
     - name: Run tests
       run: sbt test
+    - name: Generate verilog
+      run: sbt run
